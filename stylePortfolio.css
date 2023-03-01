@@ -196,7 +196,7 @@ nav a:hover{
     height: 80px;
     width: 80px;
     padding: 25px;
-    margin-top: -30px;
+    margin-top: -40px;
     
 }
 .services-container .services-box i{
@@ -210,13 +210,17 @@ nav a:hover{
     font-size: 1.2rem;
 }
 .services-container .services-box{
-    flex:2 2;
+    flex:1;
     background: white;
     padding: 0 30px 30px;
     text-align: center;
     margin: 2%;
     min-width: 350px;
    
+}
+.services-container .services-box:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 3px 1px 0 black;
 }
 .services .extra{
     background: url(images/extra.jpg) no-repeat;
@@ -235,4 +239,67 @@ nav a:hover{
     font-size: 1.5rem;
     padding-top: 3rem;
     padding-bottom: 4rem;
+}
+.clients{
+    min-height: 80vh;
+    padding: 10rem 10% 2rem;
+    text-align: center;
+}
+.clients h1{
+    
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.clients h1 span{
+    color: var(--main-color);
+}
+.clients .client-img{
+    height:250px;
+    width:250px; 
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.clients .client-info p{
+    font-size: 1.6rem;
+}
+.client .client-info h3{
+    font-size: 2rem;
+}
+.work{
+    min-height: 100vh;
+    padding-top: 3rem;
+    text-align: center;
+    background: rgb(243, 238, 238);
+    padding-bottom: 2rem;
+}
+.work h1{
+    
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.work h1 span{
+    color: var(--main-color);
+}
+.work .work-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:2rem;
+    margin: 1%;
+}
+.work .work-container .work-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+}
+.work-box img{
+    width: 100%;
+    
+}
+.work-box .work-info{
+    position: relative;
+    text-align: center;
+
 }
