@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color:white;
+    --main-color:#0ef;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    margin: 2% 2% 2% 2%;
+}
+
+.main{
+    background: url(images/home-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:var(--text-color);
+   
+}
+header{
+    
+    
+    width: 100%;
+    padding: 2rem 3%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    text-transform: uppercase;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+nav a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+nav a.active,
+nav a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+.home{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    display: flex;
+    
+}
+.home-content{
+   flex: 1;
+   
+   
+}
+.profile{
+    flex: 1;
+   
+   
+}
+.home-content h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: rgb(16, 159, 154);
+    margin-bottom: 1.5rem;
+}
+.home-content h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    
+}
+.home-content p{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn:hover{
+    box-shadow: none;
+}
+.about{
+    min-height: 80vh;
+    padding: 10rem 10% 2rem;
+    display: flex;
+    gap: 14rem;
+    justify-content: center;
+    
+}
+.about-img img{
+    width: 20vw;
+}
+.about-content{
+    margin-top: 6rem;
+}
+.about-content .heading{
+    
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.about-content h1 span{
+    color: var(--main-color);
+}
+.about-content h3{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: rgb(16, 159, 154);
+    margin-bottom: 1rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.social-media{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.social-media a{
+    display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 4rem;
+   height: 4rem;
+   background: transparent;
+   border: .2rem solid var(--second-bg-color);
+   border-radius: 50%;
+   font-size: 2rem;
+   color: var(--second-bg-color);
+   margin:3rem 1.5rem 3rem 0;
+   transition: .5s ease;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    
+    transform: translateY(-2px);
+}
+.services{
+    background: rgb(243, 238, 238);
+}
+.services .heading{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+}
+.services h1 span{
+    color: var(--main-color);
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.services-container .services-box .icon{
+    
+   background: var(--main-color);
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+    margin-top: -30px;
+    
+}
+.services-container .services-box i{
+    
+    font-size: 2.5rem;
+}
+.services-container .services-box h3{
+    font-size: 2rem;
+}
+.services-container .services-box p{
+    font-size: 1.2rem;
+}
+.services-container .services-box{
+    flex:2 2;
+    background: white;
+    padding: 0 30px 30px;
+    text-align: center;
+    margin: 2%;
+    min-width: 350px;
+   
+}
+.services .extra{
+    background: url(images/extra.jpg) no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    color:var(--text-color);
+    text-align: center;
+}
+.services .extra h1{
+    margin-top: 20px;
+    padding-top:4.4rem;
+    font-size: 4rem;
+}
+.services .extra p{
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
