@@ -301,5 +301,15 @@ nav a:hover{
 .work-box .work-info{
     position: relative;
     text-align: center;
-
+    padding: 1rem;
+}
+.work-box .work-info h4{
+    font-size: 2rem;
+}
+.work-box .work-info p{
+    font-size: 1.2rem;
+}
+.work-box .work-info i{
+    padding: 1rem;
+    transform: scale(1.8);
 }
