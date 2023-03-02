@@ -241,31 +241,57 @@ nav a:hover{
     padding-bottom: 4rem;
 }
 .clients{
-    min-height: 80vh;
-    padding: 10rem 10% 2rem;
+    background: whitesmoke;
+    padding-top: 10rem;
     text-align: center;
 }
+
 .clients h1{
     
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 4rem;
+    
 }
 .clients h1 span{
     color: var(--main-color);
 }
-.clients .client-img{
+.client-img{
     height:250px;
     width:250px; 
     border-radius: 50%;
-    margin-bottom: 2rem;
+    object-fit: cover;
+    padding-bottom: 20px;
 }
-.clients .client-info p{
+.client-info p{
     font-size: 1.6rem;
 }
-.client .client-info h3{
+.client-info h3{
     font-size: 2rem;
 }
+
+.cl-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    
+    padding: 50px 20px;
+}
+.slide i{
+    font-size: 30px;
+    color: #4070f4;
+}
+
+
+
+
+
 .work{
     min-height: 100vh;
     padding-top: 3rem;

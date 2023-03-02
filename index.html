@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylePortfolio.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>portfolio</title>
 </head>
 <body>
-    <main class="main">
-    <header>
-        <a href="#" class="logo">Portfolio</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#work">Work</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact" class="contact">Contact</a>
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="profile">
-            <img src="images/profile1.jpg" height="600px" width="350px">
-        </div>
-        <div class="home-content">
-            <h3>Indrajeet Singh Yadav</h3>
-            <h1>Full Stack Developer</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id repellendus soluta facere doloremque quos, expedita quaerat eos alias commodi tenetur provident amet rem, asperiores, perferendis fugiat libero similique temporibus? Voluptatem sint iusto dolore culpa temporibus accusamus eum ut modi?</p>
-            
-            <a href="#" class="btn">Download Resume</a>
-        </div>
+    <main class="main">   
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav>
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#work">Work</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact" class="contact">Contact</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="profile">
+                <img src="images/profile1.jpg" height="600px" width="350px">
+            </div>
+            <div class="home-content">
+                <h3>Indrajeet Singh Yadav</h3>
+                <h1>Full Stack Developer</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem id repellendus soluta facere doloremque quos, expedita quaerat eos alias commodi tenetur provident amet rem, asperiores, perferendis fugiat libero similique temporibus? Voluptatem sint iusto dolore culpa temporibus accusamus eum ut modi?</p>
+                <a href="#" class="btn">Download Resume</a>
+            </div>
+        </section>
     </main>
-    </section>
-    
+
+
     <section class="about" id="about">
         <div class="about-img">
             <img src="images/profile.jpg">
@@ -53,10 +53,11 @@
             </div>
         </div>
     </section>
+
+
     <section class="services" id="services">
         <h1 class="heading">Our <span>Services</span></h1>
         <div class="services-container">
-        
             <div class="services-box">
                 <div class="icon">
                 <i class='bx bx-code-alt'></i>
@@ -85,7 +86,6 @@
                 <h3>Data Visualization</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi aspernatur deserunt ipsam numquam atque eveniet praesentium sint repudiandae, minus beatae ipsum non explicabo repellat laborum, recusandae saepe ut ab!</p>
             </div>
-         
             <div class="services-box">
                 <div class="icon">
                 <i class='bx bx-line-chart'></i>
@@ -93,7 +93,6 @@
                 <h3>Machine Learning</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt commodi aspernatur deserunt ipsam numquam atque eveniet praesentium sint repudiandae, minus beatae ipsum non explicabo repellat laborum, recusandae saepe ut ab!</p>
             </div>
-
             <div class="services-box">
                 <div class="icon">
                 <i class='bx bxl-python'></i>
@@ -108,16 +107,30 @@
             <a href="#" class="btn">Download Resume</a>
         </div>
     </section>
+
+
     <section class="clients" id="clients">
         <h1 class="heading">Our <span>Clients</span></h1>
-        <div class="client">
-            <img class="client-img" src="images/client-1.jpg">
-            <div class="client-info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In repudiandae, eveniet ut et cum natus vitae, quibusdam quaerat aliquid provident explicabo deserunt nisi illo quis facilis cupiditate aspernatur. Voluptates, impedit?</p>
-                <h3>- Wanda, Company: <span>Star Trek</span></h3>
+        <div class="cl-container ">
+        <div class="testimonial swiper mySwiper">
+            <div class="testi-content swiper-wrapper">    
+                <div class="slide swiper-slide">
+                    <img class="client-img" src="images/client-1.jpg">
+                    <div class="client-info">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In repudiandae, eveniet ut et cum natus vitae, quibusdam quaerat aliquid provident explicabo deserunt nisi illo quis facilis cupiditate aspernatur. Voluptates, impedit?</p>
+                    <i class='bx bxs-quote-alt-left'></i>
+                    <h3>- Wanda, Company: <span>Star Trek</span></h3>
+                </div>
             </div>
         </div>
+        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
+
+
     <section class="work" id="work">
         <h1 class="heading">Our <span>Work</span></h1>
         <div class="work-container">
@@ -171,6 +184,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="blog" id="blog">
         <h1 class="heading">Our <span>Blog</span></h1>
         <div class="blog-container">
@@ -203,6 +218,8 @@
             </div>
         </div>    
     </section>
+
+
     <section class="contact" id="contact">
         <h1 class="heading">Contact <span>Us</span></h1>
         <div class="contact-container">
@@ -238,5 +255,8 @@
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
+
+    
+
 </body>
 </html>
