@@ -288,28 +288,199 @@ nav a:hover{
     align-items: center;
     gap:2rem;
     margin: 1%;
+    
 }
 .work .work-container .work-box{
     position: relative;
     border-radius: 1rem;
     box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display:flex;
 }
 .work-box img{
     width: 100%;
-    
+    transition: .5s ease;
+}
+.work-box:hover img{
+   transform: scale(1.1);
 }
 .work-box .work-info{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding: 1rem;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
 }
 .work-box .work-info h4{
-    font-size: 2rem;
+    font-size: 3rem;
+    color: whitesmoke;
 }
 .work-box .work-info p{
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color: whitesmoke;
 }
-.work-box .work-info i{
+.work-info a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background:  whitesmoke;
+    border-radius: 50%;
+}
+.work-box .work-info a i{
     padding: 1rem;
     transform: scale(1.8);
+}
+.work-box:hover .work-info{
+    transform: translateY(0);
+}
+.blog{
+    min-height: 100vh;
+    padding-top: 3rem;
+   text-justify: auto;
+    background: url(images/extra.jpg);
+    padding-bottom: 2rem;
+}
+.blog h1{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.blog h1 span{
+    color: var(--main-color);
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.blog-container .blog-box{
+    flex:1;
+    background: white;
+    
+    
+    margin: 2%;
+    min-width: 350px;
+   
+}
+.blog-box img{
+    width: 100%;
+}
+
+.blog-box .blog-info{
+    position: relative;
+    
+    padding: 1rem;
+}
+.blog-box .blog-info h4{
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-justify: auto;
+    
+}
+.blog-box .blog-info p{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.blog-box .rm {
+    font-size: 1.5rem;
+}
+.blog-box .rm:hover{
+    background: var(--main-color);
+}
+.contact{
+    margin-top: 8rem;
+}
+.contact h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+.contact h1 span{
+    color: var(--main-color);
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 2rem;
+    
+}
+.contact-container .contact-box{
+    flex:1;
+    margin:5%;
+    align-items: center;
+}
+.contact-box i{
+    font-size: 14rem;
+    margin-bottom: 3rem;
+   
+}
+.contact-box h3{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.contact-box p{
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+}
+
+.contact form{
+    max-width: 70%;
+    margin:1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+}
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align: center;
 }
